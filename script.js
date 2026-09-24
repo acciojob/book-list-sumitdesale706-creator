@@ -26,7 +26,7 @@ let button = document.createElement("button");
 button.id = "submit";
 button.innerText = "Add Book";
 
-form.appendChild(title, author, isbn, button);
+form.append(title, author, isbn, button);
 
 
 
@@ -54,7 +54,8 @@ table.appendChild(tBody);
 
 
 // add our form and table in body
-body.appendChild(form, table);
+body.append(form, table);
+
 
 
 button.addEventListener("click", () => {
@@ -68,7 +69,7 @@ button.addEventListener("click", () => {
 
 	col1.innerText = `${title.value}`;
 	col2.innerText = `${author.value}`;
-	col3.innerText = `${}`;
+	col3.innerText = `${isbn.value}`;
 	let deleteB = document.createElement("button");
 	deleteB.classList.add("delete");
     col4.appendChild(deleteB);
