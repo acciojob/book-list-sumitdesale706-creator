@@ -72,6 +72,7 @@ button.addEventListener("click", () => {
 	col3.innerText = `${isbn.value}`;
 	let deleteB = document.createElement("button");
 	deleteB.classList.add("delete");
+	deleteB.innerText = "Delete";
     col4.appendChild(deleteB);
 
 	row.append(col1, col2, col3, col4);
